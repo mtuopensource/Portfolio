@@ -1,0 +1,29 @@
+{% load static %}
+<!doctype html>
+<html class ="no-js" lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Example Portfolio</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <!-- This is a comment-->
+  </head>
+  <body>
+    <main class="container">
+      <nav class="header">
+        <img class="logo" src="{% static 'logo.png' %}" alt="Logo">
+        <ul class="menu">
+          <li>
+            <a href="{% url 'home' %}">Home</a>
+          </li>
+          <li>
+            <a href="http://google.com">Google</a>
+          </li>
+        </ul>
+      </nav>
+      {% block content %}
+
+      {% endblock %}
+    </main>
+  </body>
+</html>

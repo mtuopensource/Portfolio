@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.5) /* This is a comment*/
+}
+
+.container {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px auto;
+}
+
+.logo {
+  width: 250px;
+  height: 250px;
+}
+
+.header {
+  text-align: center;
+}
+
+.menu {
+  list-style: none;
+  /* goes (y, x) */
+  padding: 0;
+  /* goes (x, y) */
+  margin: 30px 0;
+}
+
+.menu li {
+  display: inline;
+  padding: 0 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.portfolio {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+  grid-auto-rows: 300px;
+  grid-gap: 40px;
+  justify-content: center;
+}
+
+.item {
+  color: black;
+  letter-spacing: 0.8;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.item img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
